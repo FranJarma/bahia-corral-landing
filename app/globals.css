@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Brand colors as HSL values */
+    --background: 0 0% 97%;         /* #F8F8F8 */
+    --foreground: 217 25% 18%;
+    --card: 0 0% 100%;
+    --card-foreground: 217 25% 18%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 217 25% 18%;
+    --primary: 217 25% 42%;          /* #516687 */
+    --primary-foreground: 0 0% 97%;
+    --secondary: 196 15% 85%;        /* #D4DCDF */
+    --secondary-foreground: 217 25% 42%;
+    --muted: 196 15% 85%;
+    --muted-foreground: 212 15% 52%; /* #728397 */
+    --accent: 196 15% 85%;
+    --accent-foreground: 217 25% 42%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 97%;
+    --border: 196 15% 85%;           /* #D4DCDF */
+    --input: 196 15% 85%;
+    --ring: 217 25% 42%;
+    --radius: 0.75rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-20 md:py-24;
+  }
+
+  .section-title {
+    @apply font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-brand-5 leading-tight;
+  }
+
+  .section-subtitle {
+    @apply text-brand-3 text-lg md:text-xl leading-relaxed;
+  }
+
+  .glass-card {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F8F8F8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #929FB2;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #728397;
+}
