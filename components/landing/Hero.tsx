@@ -20,7 +20,7 @@ export function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Headline */}
         <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6 drop-shadow-lg">
-          Viví la experiencia Bahía Corral.
+          Viví la experiencia <span className="text-blue-100 font-extrabold">Bahía Corral.</span>
         </h1>
 
         {/* Subheadline */}

@@ -5,7 +5,6 @@ import Link from 'next/link'
 import { Menu, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
-import { siteConfig } from '@/lib/config'
 
 const navLinks = [
   { href: '#cabanas', label: 'Cabañas' },
@@ -68,8 +67,8 @@ export function Navbar() {
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  'text-sm font-medium tracking-wide transition-colors duration-200 relative group',
-                  isScrolled ? 'text-brand-3 hover:text-brand-5' : 'text-white/80 hover:text-white'
+                  'text-md font-serif font-medium tracking-wide transition-colors duration-200 relative group',
+                  isScrolled ? 'text-brand-3 hover:text-brand-5' : 'text-white'
                 )}
               >
                 {link.label}
